@@ -24,6 +24,7 @@ from .commands.sync import sync_code
 from .commands.upgrade import upgrade
 from .commands.wait import wait
 from .commands.web import web
+from .commands.add_agent import add_agent
 
 
 @click.group(name='docker')
@@ -54,3 +55,4 @@ dcos_docker.add_command(sync_code)
 dcos_docker.add_command(wait)
 dcos_docker.add_command(web)
 dcos_docker.add_command(upgrade)
+dcos_docker.add_command(add_agent)
